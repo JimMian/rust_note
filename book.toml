@@ -1,5 +1,8 @@
 [book]
-authors = []
-language = "en"
-src = "src"
-title = "Rust Note"
+title = "JimRustNote"
+authors = ["JimMian"]
+description = "STM32 + Rust 实战笔记"
+language = "zh-CN"
+
+[output.html]
+git-repository-url = "https://github.com/JimMian/rust_note"
