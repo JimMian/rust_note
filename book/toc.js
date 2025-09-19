@@ -8,7 +8,7 @@ class MDBookSidebarScrollbox extends HTMLElement {
         super();
     }
     connectedCallback() {
-        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> 基础语法</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="test2.html"><strong aria-hidden="true">1.1.</strong> 测试2</a></li></ol></li></ol>';
+        this.innerHTML = '<ol class="chapter"><li class="chapter-item expanded affix "><a href="prefix.html">前言</a></li><li class="chapter-item expanded affix "><li class="part-title">目录显示，不带链接</li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> 章节一（自动带前序号）</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="C1_1.html"><strong aria-hidden="true">1.1.</strong> 内容1-自动带前序号</a></li><li class="chapter-item expanded "><a href="C1_2.html"><strong aria-hidden="true">1.2.</strong> 内容2-自动带前序号</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> 章节二</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Draft Chapter</div></li></ol>';
         // Set the current, active page, and reveal it if it's hidden
         let current_page = document.location.href.toString().split("#")[0].split("?")[0];
         if (current_page.endsWith("/")) {

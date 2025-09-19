@@ -1,8 +1,6 @@
 [book]
-title = "JimRustNote"
+title = "note"
 authors = ["JimMian"]
-description = "STM32 + Rust 实战笔记"
+description = "my note"
 language = "zh-CN"
-
-[output.html]
-git-repository-url = "https://github.com/JimMian/rust_note"
+multilingual = false

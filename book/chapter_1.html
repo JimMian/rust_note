@@ -3,12 +3,12 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>基础语法 - JimRustNote</title>
+        <title>章节一（自动带前序号） - note</title>
 
 
         <!-- Custom HTML head -->
 
-        <meta name="description" content="STM32 + Rust 实战笔记">
+        <meta name="description" content="my note">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -138,14 +138,11 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">JimRustNote</h1>
+                    <h1 class="menu-title">note</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://github.com/JimMian/rust_note" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
                     </div>
@@ -178,17 +175,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="基础语法"><a class="header" href="#基础语法">基础语法</a></h1>
-<pre><code>let a = 123; // 不可变变量
-test
-</code></pre>
+                        <h2 id="-章节1-标题放大"><a class="header" href="#-章节1-标题放大"><span style="font-size:1.8em;">🔧 章节1 标题放大</span></a></h2>
+<h2 id="标题放大"><a class="header" href="#标题放大"><span style="font-size:1.2em;">标题放大</span></a></h2>
+<p><strong>文字加粗</strong></p>
+<p><span style="color:red;background-color:#ffe6e6;">警告：这是红色文字</span></p>
+<ul>
+<li><a href="C1_1.html">内容1-自动带前序号</a></li>
+</ul>
+<p><span style="font-size:2.3em;">字体放大</span></p>
+<p><strong><span style="font-size:1.4em;">字体放大加粗</span></strong></p>
+<!-- 仅放大 -->
+<p><span style="font-size:1.3em;">仅放大</span></p>
+<!-- 放大 + 红色 -->
+<p><span style="font-size:1.4em;color:red;">放大 + 红色</span></p>
+<!-- 放大 + 底色 颜色板： #78c792ff -->
+<p><span style="font-size:1.2em;background:#78c792ff;">放大 + 底色</span></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="prefix.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next prefetch" href="test2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="C1_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -198,14 +209,33 @@ test
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="prefix.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next prefetch" href="test2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="C1_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

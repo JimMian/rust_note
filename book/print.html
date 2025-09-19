@@ -3,13 +3,13 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>JimRustNote</title>
+        <title>note</title>
         <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
 
-        <meta name="description" content="STM32 + Rust 实战笔记">
+        <meta name="description" content="my note">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -139,14 +139,11 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">JimRustNote</h1>
+                    <h1 class="menu-title">note</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://github.com/JimMian/rust_note" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
                     </div>
@@ -179,16 +176,36 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="基础语法"><a class="header" href="#基础语法">基础语法</a></h1>
-<pre><code>let a = 123; // 不可变变量
-test
+                        <h1 id="前言"><a class="header" href="#前言">前言</a></h1>
+<pre><code>    用于测试的前言文字
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="基础语法-1"><a class="header" href="#基础语法-1">基础语法</a></h1>
-<pre><code>let a = 123; // 不可变变量
-
-
-test2 write
-</code></pre>
+<p>以下是带提示的链接：</p>
+<p><a href="https://rust-lang.org" title="Rust 官网">Rust 官网</a></p>
+<p><a href="https://hellowac.github.io/mdbook-doc-zh/index.html" title="mdbook 使用指南">mdbook使用指南</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="-章节1-标题放大"><a class="header" href="#-章节1-标题放大"><span style="font-size:1.8em;">🔧 章节1 标题放大</span></a></h2>
+<h2 id="标题放大"><a class="header" href="#标题放大"><span style="font-size:1.2em;">标题放大</span></a></h2>
+<p><strong>文字加粗</strong></p>
+<p><span style="color:red;background-color:#ffe6e6;">警告：这是红色文字</span></p>
+<ul>
+<li><a href="C1_1.html">内容1-自动带前序号</a></li>
+</ul>
+<p><span style="font-size:2.3em;">字体放大</span></p>
+<p><strong><span style="font-size:1.4em;">字体放大加粗</span></strong></p>
+<!-- 仅放大 -->
+<p><span style="font-size:1.3em;">仅放大</span></p>
+<!-- 放大 + 红色 -->
+<p><span style="font-size:1.4em;color:red;">放大 + 红色</span></p>
+<!-- 放大 + 底色 颜色板： #78c792ff -->
+<p><span style="font-size:1.2em;background:#78c792ff;">放大 + 底色</span></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="内容1"><a class="header" href="#内容1">内容1</a></h1>
+<pre><code>fn main() {
+let x = 5;
+let y = 6;
+println!("{}", x + y);
+}</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="章节二"><a class="header" href="#章节二">章节二</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="章节二-1"><a class="header" href="#章节二-1">章节二</a></h1>
+<p>测试章节2</p>
 
                     </main>
 
@@ -207,6 +224,22 @@ test2 write
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
