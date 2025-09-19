@@ -4,3 +4,5 @@ authors = ["JimMian"]
 description = "my note"
 language = "zh-CN"
 multilingual = false
+[output.html]
+site-url = "/JimMian/"   # 让相对路径正确
