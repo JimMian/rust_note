@@ -5,4 +5,4 @@ description = "my note"
 language = "zh-CN"
 multilingual = false
 [output.html]
-site-url = "/JimMian/"   # 让相对路径正确
+site-url = "/JimMianbu/"   # 让相对路径正确
